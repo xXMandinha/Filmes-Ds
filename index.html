@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Escolha de Filme</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Escolha seu Filme</h1>
+
+<label for="genero">Escolha o Gênero:</label>
+<select id="genero" onchange="atualizarPlataformas()">
+<option value="">Selecione...</option>
+</select>
+
+<label for="plataforma">Escolha a Plataforma:</label>
+<select id="plataforma" onchange="atualizarFilmes()" disabled>
+<option value="">Selecione...</option>
+</select>
+
+<label for="filme">Escolha o Filme:</label>
+<select id="filme" disabled>
+<option value="">Selecione...</option>
+</select>
+
+<script src="script.js"></script>
+</body>
+</html>
